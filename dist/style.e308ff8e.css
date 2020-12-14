@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    position:relative;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #eee;
+}
+@keyframes s{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#八卦{
+    height:400px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    animation:s 10s infinite linear;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+}
+@media(max-width:500px){
+    #八卦{
+        height:200px;
+        width:200px;
+    }
+}
+@media(max-height:500px){
+    #八卦{
+        height:200px;
+        width:200px;
+    }
+}
+@media(max-width:250px){
+    #八卦{
+        height:100px;
+        width:100px;
+    }
+}
+@media(max-height:250px){
+    #八卦{
+        height:100px;
+        width:100px;
+    }
+}
+@media(max-width:200px){
+    #八卦{
+        height:50px;
+        width:50px;
+    }
+}
+@media(max-height:200px){
+    #八卦{
+        height:50px;
+        width:50px;
+    }
+}
+@media(max-width:150px){
+    #八卦{
+        height:0;
+        width:0;
+    }
+}
+@media(max-height:150px){
+    #八卦{
+        height:0;
+        width:0;
+    }
+}
+#八卦>div:first-child{
+    height: 100%;
+    width: 50%;
+    left:0;
+    position:absolute;
+    background: black;
+}
+#八卦>div:nth-child(2){
+    height: 100%;
+    width: 50%;
+    right: 0;
+    position:absolute;
+    background: white;
+}
+#八卦>div:nth-child(3){
+    height:50%;
+    width:50%;
+    left:25%;
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+}
+#八卦>div:nth-child(4){
+    height:50%;
+    width:50%;
+    left:25%;
+    top:50%;
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+}
+#八卦>div:nth-child(5){
+    height:12.5%;
+    width:12.5%;
+    left:43.75%;
+    top:68.75%;
+    position: absolute;
+    border-radius: 50%;
+    background:black;
+}
+#八卦>div:nth-child(6){
+    height:12.5%;
+    width:12.5%;
+    left:43.75%;
+    top:18.75%;
+    position: absolute;
+    border-radius: 50%;
+    background:white;
+}
+#八卦-描述{
+    margin-top: 1em;
+}
+#八卦-wrapper{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    /* 主轴方向上子元素的位置（分布方式）：居中  */
+    align-items: center;
+    /* 交叉轴方向上子元素的位置（分布方式）：居中 */
+    flex-direction: column;
+    /* 主轴上子元素排列方式：纵向 */
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
