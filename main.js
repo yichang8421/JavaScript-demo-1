@@ -40,7 +40,7 @@ document.onmousemove = function (e) {
         resultY = e.clientY - initialY
         var top = parseInt(div1.style.top) || 0
         var left = parseInt(div1.style.left) || 0
-        // 设置不出视窗边界
+        // 设置不出视窗边界，优化交互体验
         // var right = parseInt(div1.style.right) || 0
         // var bottom = parseInt(div1.style.bottom) || 0
         // if (top < 0) {
